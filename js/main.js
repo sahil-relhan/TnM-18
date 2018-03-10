@@ -10,6 +10,50 @@ jQuery(function($) {'use strict',
 			// callback function
 		});
 
+		//map_style
+
+		function initMap() {
+
+		var location = new google.maps.LatLng(28.7197, 77.0661);
+
+		var mapCanvas = document.getElementById('map');
+		var mapOptions = {
+				center: location,
+				zoom: 16,
+				panControl: false,
+				mapTypeId: google.maps.MapTypeId.ROADMAP
+		}
+		var map = new google.maps.Map(mapCanvas, mapOptions);
+
+		var markerImage = 'marker.png';
+
+		var marker = new google.maps.Marker({
+				position: location,
+				map: map,
+				icon: markerImage
+		});
+
+		// var contentString = '<div class="map_description"><h3>Maharaja Agrasen Institute of Technology</h3><p>PSP Area, Plot No. 1, Sector-22, Rohini,<br>Delhi-110086<br></p>Fax: +1 (123) 456 7891</div>';
+    //
+		// var infowindow = new google.maps.InfoWindow({
+		// 		content: contentString,
+		// 		maxWidth: 400
+		// });
+    //
+		// marker.addListener('click', function () {
+		// 		infowindow.open(map, marker);
+		// });
+
+
+}
+
+google.maps.event.addDomListener(window, 'load', initMap);
+
+
+
+
+
+
 
 
 	//Scroll Menu
@@ -67,84 +111,84 @@ jQuery(function($) {'use strict',
 
 });
 
-
-// Google Map Customization
-(function(){
-
-	var map;
-
-	map = new GMaps({
-		el: '#gmap',
-		lat: 43.04446,
-		lng: -76.130791,
-		scrollwheel:false,
-		zoom: 16,
-		zoomControl : false,
-		panControl : false,
-		streetViewControl : false,
-		mapTypeControl: false,
-		overviewMapControl: false,
-		clickable: false
-	});
-
-	var image = 'images/map-icon.png';
-	map.addMarker({
-		lat: 43.04446,
-		lng: -76.130791,
-		icon: image,
-		animation: google.maps.Animation.DROP,
-		verticalAlign: 'bottom',
-		horizontalAlign: 'center',
-		backgroundColor: '#3e8bff',
-	});
-
-
-	var styles = [
-
-	{
-		"featureType": "road",
-		"stylers": [
-		{ "color": "#b4b4b4" }
-		]
-	},{
-		"featureType": "water",
-		"stylers": [
-		{ "color": "#d8d8d8" }
-		]
-	},{
-		"featureType": "landscape",
-		"stylers": [
-		{ "color": "#f1f1f1" }
-		]
-	},{
-		"elementType": "labels.text.fill",
-		"stylers": [
-		{ "color": "#000000" }
-		]
-	},{
-		"featureType": "poi",
-		"stylers": [
-		{ "color": "#d9d9d9" }
-		]
-	},{
-		"elementType": "labels.text",
-		"stylers": [
-		{ "saturation": 1 },
-		{ "weight": 0.1 },
-		{ "color": "#000000" }
-		]
-	}
-
-	];
-
-	map.addStyle({
-		styledMapName:"Styled Map",
-		styles: styles,
-		mapTypeId: "map_style"
-	});
-
-	map.setStyle("map_style");
-}());
+//
+// // Google Map Customization
+// // (function(){
+// //
+// // 	var map;
+// //
+// // 	map = new GMaps({
+// // 		el: '#gmap',
+// // 		lat: 28.7197,
+// // 		lng:  77.0661,
+// // 		scrollwheel:false,
+// // 		zoom: 16,
+// // 		zoomControl : false,
+// // 		panControl : false,
+// // 		streetViewControl : false,
+// // 		mapTypeControl: false,
+// // 		overviewMapControl: false,
+// // 		clickable: false
+// // 	});
+// //
+// // 	var image = 'images/map-icon.png';
+// // 	map.addMarker({
+// // 		lat: 28.7197,
+// // 		lng:  77.0661,
+// // 		icon: image,
+// // 		animation: google.maps.Animation.DROP,
+// // 		verticalAlign: 'bottom',
+// // 		horizontalAlign: 'center',
+// // 		backgroundColor: '#3e8bff',
+// // 	});
+//
+//
+// 	var styles = [
+//
+// 	{
+// 		"featureType": "road",
+// 		"stylers": [
+// 		{ "color": "#b4b4b4" }
+// 		]
+// 	},{
+// 		"featureType": "water",
+// 		"stylers": [
+// 		{ "color": "#d8d8d8" }
+// 		]
+// 	},{
+// 		"featureType": "landscape",
+// 		"stylers": [
+// 		{ "color": "#f1f1f1" }
+// 		]
+// 	},{
+// 		"elementType": "labels.text.fill",
+// 		"stylers": [
+// 		{ "color": "#000000" }
+// 		]
+// 	},{
+// 		"featureType": "poi",
+// 		"stylers": [
+// 		{ "color": "#d9d9d9" }
+// 		]
+// 	},{
+// 		"elementType": "labels.text",
+// 		"stylers": [
+// 		{ "saturation": 1 },
+// 		{ "weight": 0.1 },
+// 		{ "color": "#000000" }
+// 		]
+// 	}
+//
+// 	];
+//
+// 	map.addStyle({
+// 		styledMapName:"Styled Map",
+// 		styles: styles,
+// 		mapTypeId: "map_style"
+// 	});
+//
+// 	map.setStyle("map_style");
+// }());
 
 function smooth_scrolling(){
 	$('#home_button').on('click',function(){
