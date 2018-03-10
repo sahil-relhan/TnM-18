@@ -1,17 +1,17 @@
 jQuery(function($) {'use strict',
-	
+
 	//Countdown js
 	 $("#countdown").countdown({
 			date: "10 july 2014 12:00:00",
 			format: "on"
 		},
-		
+
 		function() {
 			// callback function
 		});
-	
 
-	
+
+
 	//Scroll Menu
 
 	function menuToggle()
@@ -27,15 +27,15 @@ jQuery(function($) {'use strict',
 				}
 			});
 		}else{
-			
+
 			$('.main-nav').addClass('fixed-menu animated slideInDown');
-				
+
 		}
 	}
 
 	menuToggle();
-	
-	
+
+
 	// Carousel Auto Slide Off
 	$('#event-carousel, #twitter-feed, #sponsor-carousel ').carousel({
 		interval: false
@@ -99,7 +99,7 @@ jQuery(function($) {'use strict',
 	});
 
 
-	var styles = [ 
+	var styles = [
 
 	{
 		"featureType": "road",
@@ -140,11 +140,31 @@ jQuery(function($) {'use strict',
 	map.addStyle({
 		styledMapName:"Styled Map",
 		styles: styles,
-		mapTypeId: "map_style"  
+		mapTypeId: "map_style"
 	});
 
 	map.setStyle("map_style");
 }());
 
+function smooth_scrolling(){
+	$('#home_button').on('click',function(){
+	$('html, body').animate({scrollTop: $("#home").offset().top},700);
+});
+$('#explore_button').on('click',function(){
+$('html, body').animate({scrollTop: $("#explore").offset().top},700);
+});
+$('#event_button').on('click',function(){
+$('html, body').animate({scrollTop: $("#event").offset().top},700);
+});
+$('#about_button').on('click',function(){
+$('html, body').animate({scrollTop: $("#about").offset().top},700);
+});
+$('#twitter_button').on('click',function(){
+$('html, body').animate({scrollTop: $("#twitter").offset().top},700);
+});
+$('#contact_button').on('click',function(){
+$('html, body').animate({scrollTop: $("#contact").offset().top},700);
+});
 
-
+}
+smooth_scrolling();
