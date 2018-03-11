@@ -11,6 +11,8 @@
 	<link href="css/main.css" rel="stylesheet">
 	<link href="css/animate.css" rel="stylesheet">
 	<link href="css/responsive.css" rel="stylesheet">
+	<link href="css/gal.css" rel="stylesheet">
+	<link href="css/tabs.css" rel="stylesheet">
 
     <!--[if lt IE 9]>
 	    <script src="js/html5shiv.js"></script>
@@ -144,41 +146,45 @@
 					<div id="event-carousel" class="carousel slide" data-interval="false">
 						<h2 class="heading">Events At a Glance:</h2>
 						<div class="tabs">
-								<img src="peace.png" width="500px" height="500px">
-  <button id="day1" class="button">DAY 1</button>
-  <button id="day2" class="button">DAY 2</button>
-  <button id="day3" class="button">DAY 3</button>
-<input class = "input" type="button" name="tabs" id="tabone" checked="checked">
-  <label id="day_1" for="tabone">Day One</label>
-							<div class="tab" id = 'tb1'>
-    <h1>Day One Content</h1>
-    <p><!-- add day1 despcription --></p>
-    <!-- <img src=""> -->
-  </div>
-<input class = "input" type="button" name="tabs" id="tabtwo">
-  <label id="day_2" for="tabtwo">Day Two</label>
-  <div class="tab" id = 'tb2'>
-    <h1>Day Two Content</h1>
-    <p>
-      <!-- add day 2 details -->
-    </p>
-    <!-- <img src=""> --> 
-  </div><input class = "input" type="button" name="tabs" id="tabthree">
-  <label id="day_3" for="tabthree">Day Three</label>
-  <div class="tab" id = 'tb3'>
-    <h1>Day Three Content</h1>
-    <p><!-- Add day 3 description --></p>
-    <!-- <img src=""> -->
-  </div>  
-									
-							</div>
-					</div>
-				</div>
-				<div class="guitar">
+								   <table style=" border: 2px solid red" align="center">
+         	<tr>
+         		<th class="tab" id="dayOne">
+         		 <a id = "tab1" class = "anchor" href="#" >
+			    	<h4>day 1</h4>
+			     </a>
+			    </th>
+			    <th class="tab" id="dayTwo">
+         		 <a id = "tab2" class = "anchor" href="#" >
+			    	<h4>day 2</h4>
+			     </a>
+			    </th>
+			    <th class="tab" id="dayThree">
+         		 <a id = "tab3" class = "anchor" href="#" >
+			    	<h4>day 3</h4>
+			     </a>
+			    </th>
+         	</tr>
+         </table>
+
+   <div id="container">
+            <artice class = 'data' id="tb1">day one
+            </artice>
+
+         
+            <artice class = 'data' id="tb2">day two
+            </artice>
+            
+            <artice class = 'data' id="tb3">day three
+                 </artice>
+   </div>
+
+				<!-- <div class="guitar">
 					<img class="img-responsive" src="images/guitar.png" alt="guitar">
-				</div>
+				</div> -->
+			
 			</div>
 		</div>
+		<br><br>
 	</section><!--/#event-->
 	<section id="about">
 		<div class="guitar2">
@@ -202,9 +208,100 @@
 				<!--<img class="img-responsive" src="images/twit.png" alt="twit">-->
 			</div>
 
-			<div class="row" >
-			<p><u><center><strong>Our Team</strong></center></u></h3></p>
-			<div class="row">
+			<div class="row" ><!-- 
+			<p><u><center><strong></strong></center></u></h3></p>
+			 --><div class="row">
+
+<h2 style="text-align:center; color:black"><strong>Throwback Techsurge and Mridang</strong></h2>
+
+<div class="container"  align = "center">
+  <div class="mySlides"  >
+  <img  class = "img_rad" src="images/ImgGallery3.jpg" style="width:40% ">
+</div>
+
+  <div class="mySlides">
+    <img class = "img_rad" src="images/ImgGallery4.jpg" style="width:40%">
+  </div>
+
+  <div class="mySlides">
+<img class = "img_rad" src="images/ImgGallery5.jpg" style="width:40%">
+  </div>
+    
+  <div class="mySlides">
+    <img class = "img_rad" src="images/ImgGallery6.jpg" style="width:40%">
+</div>
+
+  <div class="mySlides">
+   <img class = "img_rad" src="images/ImgGallery7.jpg" style="width:40%">
+
+  </div>
+    
+  <div class="mySlides">
+    <img class = "img_rad" src="images/ImgGallery8.jpg" style="width:40%">
+ </div>
+     
+  <div class="mySlides">
+    <img class = "img_rad" src="images/ImgGallery9.jpg" style="width:40%; height: 303px">
+ </div>  
+  <div class="mySlides">
+    <img class = "img_rad" src="images/ImgGallery10.jpg" style="width:40%; height: 303px">
+ </div>  
+  <div class="mySlides">
+    <img class = "img_rad" src="images/ImgGallery11.jpg" style="width:40%;height: 303px">
+ </div>  
+  <div class="mySlides">
+    <img class = "img_rad" src="images/ImgGallery12.jpg" style="width:40%; height: 303px">
+ </div>  
+  <div class="mySlides">
+    <img class = "img_rad" src="images/ImgGallery13.jpg" style="width:40%;height: 303px">
+ </div>      
+  <div class="mySlides">
+    <img class = "img_rad" src="images/ImgGallery15.jpg" style="width:40% ; height : 303px">
+ </div> 
+<br>
+  <a class="prev" onclick="plusSlides(-1)" style="position: relative;"><</a>
+  <a class="next" onclick="plusSlides(1)" style="position: relative;">></a>
+
+  <br><br>
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="images/ImgGallery3.jpg" style="width:100%" onclick="currentSlide(1)" >
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/ImgGallery4.jpg" style="width:100%" onclick="currentSlide(2)">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/ImgGallery5.jpg" style="width:100%" onclick="currentSlide(3)">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/ImgGallery6.jpg" style="width:100%" onclick="currentSlide(4)">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/ImgGallery7.jpg" style="width:100%" onclick="currentSlide(5)">
+    </div>    
+    <div class="column">
+      <img class="demo cursor" src="images/ImgGallery8.jpg" style="width:100%" onclick="currentSlide(6)">
+    </div>    
+    <div class="column">
+      <img class="demo cursor" src="images/ImgGallery9.jpg" style="width:100%" onclick="currentSlide(7)">
+    </div>    
+    <div class="column">
+      <img class="demo cursor" src="images/ImgGallery10.jpg" style="width:100%" onclick="currentSlide(8)">
+    </div>    
+    <div class="column">
+      <img class="demo cursor" src="images/ImgGallery11.jpg" style="width:100%" onclick="currentSlide(9)">
+    </div>    
+    <div class="column">
+      <img class="demo cursor" src="images/ImgGallery12.jpg" style="width:100%" onclick="currentSlide(10)">
+    </div>    
+    <div class="column">
+      <img class="demo cursor" src="images/ImgGallery13.jpg" style="width:100%" onclick="currentSlide(11)">
+    </div>    
+    <div class="column">
+      <img class="demo cursor" src="images/ImgGallery15.jpg" style="width:100%;height:62px" onclick="currentSlide(12)">
+    </div>
+  </div>
+</div>
 
 				<!--<div class="col-sm-6 col-sm-offset-3">
 
@@ -369,5 +466,7 @@ var map = new google.maps.Map(document.getElementById("map"), mapOptions);
     <script type="text/javascript" src="js/jquery.scrollTo.js"></script>
     <script type="text/javascript" src="js/jquery.nav.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/gal.js"></script>
+    <script type="text/javascript" src="js/tabs.js"></script>
 </body>
 </html>
