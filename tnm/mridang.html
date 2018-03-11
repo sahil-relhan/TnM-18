@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>mridang</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="techsurge.css">
+  <script src="https://use.fontawesome.com/6059b49d0e.js"></script>
+</head>
+<body>
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-demo" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+          </button>
+        <a href="#" class="navbar-brand"><i class="fa fa-bandcamp"></i> MRIDANG</a>
+      </div>
+
+      <div class="collapse navbar-collapse" id="nav-demo">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="">Home</a></li>
+          <li><a href="#section1">About</a></li>
+          <li><a href="#section2">Events</a></li>
+          <li><a href="techsurge.html">Techsurge</a></li>
+          <li><a href="non-tech-events.html">Non Tech Events</a></li>
+          <li><a href="#section3">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    </nav>
+<div class="my-container1">
+    <div id="section1" class="container-fluid">
+    <h1 style="padding-top:70px; color:#0A6C2B; font-family:lobster;">About Us</h1><br>
+      <div class="row">
+        <div class="col-md-5" >
+        <div style="font-size:18px; font-weight:bold; color:#1E5F88;"><p>Get ready once again for one of the most eagerly awaited abd enthralling cultural fest of MAIT, Mridang, Playing host to the most amazingly talented participants unravelling their brilliance and finesse in the various feilds of art, music and dance through a kaleidoscope of events.
+            </br>
+        
+          </p>
+</div>
+<blockquote style="font-size:20px; font-style:italic; font-weight:bold; color:red;">
+ So, it would be our pleasure to warmly invite you to join us in this endeavour making Mridang, one of the most celebrated fest of the year.
+</blockquote>
+      </div><div id="about2" class="col-md-6"><img src="http://www.myownindia.com/uploads/background-dates_mobile.jpg" class="img-responsive" style="width:100%; height:250px;"></div>
+    </div>
+        
+     
+  </div>
+  </div>
+  <!--starting events coding-->
+  <div id="section2" class="cont2">
+    <h1 style="margin-left:10px; color:#0A6C2B; font-family:lobster;"> Events </h1><br>
+    
+  </div>
+<!--Ending events coding-->
+
+<!--Starting contact us coding-->
+<div id="section3" class="container-fluid cont3">
+ <h1 style="margin-left:10px; color:#0A6C2B; font-family:lobster;">Contact Us</h1><br>
+  <div class="row">
+        <div class="col-md-6">
+        <form class="form-horizontal" role="form">
+          <div class="form-group">
+            <label for="name" class="col-sm-2 control-label">Name</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" id="name" name="name" placeholder="First & Last Name">
+              <style><span class="err"><?=$errName?></span></style>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="email" class="col-sm-2 control-label">Email</label>
+            <div class="col-sm-10">
+              <input type="email" class="form-control" id="email" name="email" placeholder="example@domain.com">
+                           <style><span class="err"><?=$errEmail?></span></style>
+            </div>
+          </div>
+                    <div class="form-group">
+            <label for="no" class="col-sm-2 control-label">Phone Number</label>
+            <div class="col-sm-10">
+              <input type="tel" maxlength="10" class="form-control" id="no" name="no" placeholder="Enter your phone no">
+                           <style><span class="err"><?=$errNo?></span></style>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="message" class="col-sm-2 control-label">Message</label>
+            <div class="col-sm-10">
+            <textarea class="form-control" rows="4" name="message"></textarea>
+            <style><span class="err"><?=$errMessage?></span></style>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="human" class="col-sm-2 control-label">2 + 3 = ?</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" id="human" name="human" placeholder="Your Answer">
+              <style><span class="err"><?=$errHuman?></span></style>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="col-sm-10 col-sm-offset-2">
+            <input id="submit" name="submit" type="submit" value="Send" class="btn btn-primary">
+            </div>
+          </div>
+          <style>/*<div class="form-group">
+            <div class="col-sm-10 col-sm-offset-2">
+              <?php  if(!empty($result)){?>
+                      <span><?=$result?></span>
+                        <a href="#" class="close" data-dismiss="alert">&times;</a>
+           <?php }?>
+            </div>
+          </div>*/</style>
+        </form>
+      </div>
+            <br>
+     <div class="col-md-6"><img src="https://www.bankofbaroda.com/writereaddata/Portal/CMS_Template_Banner/42_1_contact-us.jpg" class="img-responsive"></div>
+    </div>
+
+</div>
+
+<!--Ending contact us coding-->
+
+
+
+
+
+  <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+</html>
