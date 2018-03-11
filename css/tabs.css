@@ -1,0 +1,19 @@
+.anchor { 
+    color: blue;}
+.tab {
+	background-color: #90CAF9;
+	border: 1px solid blue;
+	width: 300px;
+	text-align: center;
+    transition-timing-function: ease-out;
+    transition: 0.25s;
+}
+
+#tb1 , #tb2 , #tb3{
+	display: none;
+	color: black;
+        border : 2px dotted black;
+        text-align: center;
+        opacity : 0.5;
+        background-color : violet;
+}
